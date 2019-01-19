@@ -1,0 +1,24 @@
+{
+  "name": "myAmazonSQL",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DPadillaNYG/myAmazonSQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DPadillaNYG/myAmazonSQL/issues"
+  },
+  "homepage": "https://github.com/DPadillaNYG/myAmazonSQL#readme",
+  "dependencies": {
+    "inquirer": "^6.2.1",
+    "mysql": "^2.16.0"
+  }
+}
