@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var Table = require("cli-table");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -51,22 +52,22 @@ function stockCheck(item_id, quantity) {
 function showProducts() {
   connection.query("SELECT * FROM `products`", function(err, res) {
     console.log("\nWelcome to the Amazon Marketplace!\n");
-    for (var i = 0; i < res.length; i++) {
-      console.log(
-        "ID: " +
-          res[i].item_id +
-          " || Product: " +
-          res[i].product_name +
-          " || Department: " +
-          res[i].department_name +
-          " || Price: $" +
-          res[i].price +
-          " || Stock: " +
-          res[i].stock_quantity +
-          "\n"
-      );
-    }
 
+    var table = new Table({
+      head: ["ID", "Product", "Department", "Price", "Stock"],
+      colWidths: [4, 18, 17, 10, 7]
+    });
+
+    for (var i = 0; i < res.length; i++) {
+      table.push([
+        res[i].item_id,
+        res[i].product_name,
+        res[i].department_name,
+        res[i].price,
+        res[i].stock_quantity
+      ]);
+    }
+    console.log(table.toString());
     promptUser();
   });
 }
