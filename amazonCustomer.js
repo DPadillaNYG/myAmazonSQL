@@ -17,7 +17,8 @@ function promptUser() {
     .prompt([
       {
         type: "input",
-        message: "What is id of the product you would like to purchase?\nID:",
+        message:
+          "What is the id of the product you would like to purchase?\nID:",
         name: "item_id"
       },
       {
