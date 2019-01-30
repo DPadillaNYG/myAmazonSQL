@@ -15,7 +15,7 @@ I learned and integrated into this project:
 - mysql (npm package) / for connecting with MySQLWorkbench
 - cli-table (npm package) / for clean display of terminal data
 - MySQL CRUD Commands (minus delete)
-- MySQLWorkBench _(refer to amazon.sql => code used within MySQLWorkbench)_
+- MySQLWorkbench _(refer to amazon.sql => code used within MySQLWorkbench)_
 
 **Also, feel free to refer to the contents within the repository to see how I:**
 
