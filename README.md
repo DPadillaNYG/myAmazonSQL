@@ -1,4 +1,4 @@
-# myAmazonSQL w/ Node.js (CLI App)
+# Amazon Storefront w/ Node.js (CLI App)
 
 myAmazonSQL is an command-line application that works like an Amazon storefront using Node.js and mySQL. Customers can buy products and managers can view inventories, update stock, and create new items in the Amazon Marketplace.
 
